@@ -6,3 +6,4 @@
 
 root to: 'home#index'
 
+get '/stories', to: 'stories#index'
