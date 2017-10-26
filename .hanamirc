@@ -1,0 +1,3 @@
+project=storyroller
+test=rspec
+template=slim
