@@ -1,9 +1,7 @@
 RSpec.describe Web::Views::Stories::Index, type: :view do
-
   let(:template)  { Hanami::View::Template.new('apps/web/templates/stories/index.html.slim') }
   let(:view)      { described_class.new(template, exposures) }
   let(:rendered)  { view.render }
-
   let(:story_placeholder_message) { 'There are no stories yet.' }
 
   shared_examples 'stories index template' do

@@ -7,3 +7,5 @@
 root to: 'home#index'
 
 get '/stories', to: 'stories#index'
+get '/stories/new', to: 'stories#new'
+post '/stories', to: 'stories#create'
