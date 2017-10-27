@@ -17,11 +17,15 @@ group :development do
 end
 
 group :test, :development do
+  gem 'hanami-fabrication'
+  gem 'faker'
+  gem 'pry'
   gem 'dotenv', '~> 2.0'
 end
 
 group :test do
   gem 'rspec'
+  gem 'database_cleaner'
   gem 'capybara'
 end
 

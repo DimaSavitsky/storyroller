@@ -1,7 +1,10 @@
 h1 = 'Stories'
 
 #stories
-  .story
-    h3 = 'First Story'
-  .story
-    h3 = 'Second Story'
+  - if stories.any?
+    - stories.each do |story|
+      .story
+        h3 = story.title
+  - else
+    .placeholder
+      = 'There are no stories yet.'
